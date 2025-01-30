@@ -12,7 +12,7 @@ jobs:
         with:
           # RSS feed URL
           RSS_URL: "https://shunyaueta.com/index.xml"
-          TWEET_TEMPLATE: 'New Post: "%title%" %url% %desc%'
+          TWEET_TEMPLATE: 'New Post: "%title%" \n %url% %desc%'
           UPDATE_WITHIN_MINUTES: 15 # for workflow_dispatch
           TWITTER_APIKEY: ${{ secrets.TWITTER_APIKEY }}
           TWITTER_APIKEY_SECRET: ${{ secrets.TWITTER_APIKEY_SECRET }}
